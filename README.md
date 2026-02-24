@@ -52,3 +52,36 @@ Type-safe - проверка типов во время выполнения
 SIMD-friendly - данные хранятся в плотных массивах
 
 Минимализм - только то, что нужно для DOD
+
+## 💡 Usage Examples / Примеры использования
+Example 1: Particle Simulation / Пример 1: Симуляция частиц
+**EN:** A simple particle system using the World concept:
+
+**RU:** Простая система частиц с использованием концепции World:
+
+```cpp
+struct ParticleSystem {
+    dod::World world;
+    
+    ParticleSystem(size_t count) : world(count) {
+        world.create_storage<float>("x");
+        world.create_storage<float>("y");
+        world.create_storage<float>("vx");
+        world.create_storage<float>("vy");
+        world.create_storage<float>("mass");
+    }
+    
+    void update(float dt) {
+        float* x = world.get_storage_data<float>("x");
+        float* y = world.get_storage_data<float>("y");
+        float* vx = world.get_storage_data<float>("vx");
+        float* vy = world.get_storage_data<float>("vy");
+        
+        for (size_t i = 0; i < world.size(); ++i) {
+            x[i] += vx[i] * dt;
+            y[i] += vy[i] * dt;
+        }
+    }
+};
+```
+
