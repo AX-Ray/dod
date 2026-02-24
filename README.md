@@ -26,6 +26,7 @@ balls.create_storage<float>("x");
 balls.create_storage<float>("y");
 balls.create_storage<float>("vx");
 balls.create_storage<float>("vy");
+```
 
 ## 📦 Features / Особенности
 **EN:**
