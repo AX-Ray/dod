@@ -1,4 +1,4 @@
-# dod.hpp - Data-Oriented Design Toolkit / Инструментарий Data-Oriented Design
+# dodt - Data-Oriented Design Toolkit
 
 ---
 
