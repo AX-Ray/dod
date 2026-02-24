@@ -26,3 +26,28 @@ balls.create_storage<float>("x");
 balls.create_storage<float>("y");
 balls.create_storage<float>("vx");
 balls.create_storage<float>("vy");
+
+## 📦 Features / Особенности
+**EN:**
+
+Single-header - just one file world.hpp
+
+Zero-cost abstractions - direct memory access via pointers
+
+Type-safe - runtime type checking
+
+SIMD-friendly - data stored in dense arrays
+
+Minimalism - only what's needed for DOD
+
+**RU:**
+
+Single-header - всего один файл world.hpp
+
+Zero-cost абстракции - прямой доступ к памяти через указатели
+
+Type-safe - проверка типов во время выполнения
+
+SIMD-friendly - данные хранятся в плотных массивах
+
+Минимализм - только то, что нужно для DOD
