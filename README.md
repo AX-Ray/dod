@@ -55,8 +55,8 @@ SIMD-friendly - данные хранятся в плотных массивах
 
 ## 💡 Usage Examples / Примеры использования
 Example 1: Particle Simulation / Пример 1: Симуляция частиц
-**EN:** A simple particle system using the World concept:
 
+**EN:** A simple particle system using the World concept:
 **RU:** Простая система частиц с использованием концепции World:
 
 ```cpp
@@ -85,3 +85,8 @@ struct ParticleSystem {
 };
 ```
 
+## ⚠️ Warning / Предупреждение
+
+**EN:** ⚡ This approach is not a silver bullet, but in specific cases it can provide significant performance gains (I managed to achieve a 7x speedup in my tests). This approach will give you an advantage in certain situations - you need to test it in your own project! 🚀
+
+**RU:** ⚡ Данный подход не является панацеей, но в отдельных случаях может давать значительный прирост производительности (я сумел получить семикратное ускорение на своих тестах). Этот подход даст выигрыш в определенных ситуациях - нужно проверять на своем проекте! 🚀
